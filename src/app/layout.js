@@ -3,9 +3,9 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Header from './components/headers'
 import Footer from './components/footer'
-import "./style.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
-import "./nav.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
-import "./form.css"; // เปลี่ยนจาก "./setyls/style.css" เป็น "../styles/setyls/style.css"
+import "./style.css"; 
+import "./nav.css"; 
+import "./form.css";  
 
 import "./globals.css";  
 
@@ -27,8 +27,32 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
 
-       
-
+      <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "รับจ้างยิงแอดทำโฆษณาออนไลน์",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "รับทำโฆษณาออนไลน์",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "รับทำโฆษณาออนไลน์ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
+                }
+              }
+            ]
+          })}
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="myadsdev" />
 <meta name="title" content="รับจ้างยิงแอดทำโฆษณาออนไลน์ 
 " />
 <meta name="description" content="รับจ้างยิงแอดทำโฆษณาออนไลน์
