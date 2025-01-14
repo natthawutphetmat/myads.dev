@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default async function Accfb() {
 
-  let data = await fetch('https://apifb.myad-dev.com/cart')
+  let data = await fetch('https://apifb.myad-dev.com/get')
   let products = await data.json()
   
   return (

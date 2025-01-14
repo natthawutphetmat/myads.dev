@@ -51,7 +51,8 @@ export default function Homepage() {
 " />
 <meta property="twitter:image" content="https://myads.dev/logo.png" />
 <meta name="google-site-verification" content="ryOmDGaWXKrwl4E9xiLHh2maGVlmpjzyFN8m9QfAyyM" />
-
+<meta name="robots" content="index" />
+<link rel="canonical" href="https://www.myads.dev" />
 
 
 
