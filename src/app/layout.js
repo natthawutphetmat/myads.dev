@@ -26,30 +26,58 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
-      <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "รับจ้างยิงแอดทำโฆษณาออนไลน์",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
-                }
+ <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Example Product",
+              "image": "https://www.myad-dev.com/product-image.jpg",
+              "description": "This is an example product description for a service related to online ads.",
+              "sku": "12345",
+              "brand": {
+                "@type": "Brand",
+                "name": "Example Brand"
               },
-              {
-                "@type": "Question",
-                "name": "รับทำโฆษณาออนไลน์",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "รับทำโฆษณาออนไลน์ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
-                }
+              "offers": {
+                "@type": "Offer",
+                "url": "https://www.myad-dev.com/product",
+                "priceCurrency": "USD",
+                "price": "19.99",
+                "priceValidUntil": "2025-12-31",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
               }
-            ]
-          })}
+            }
+          `}
+        </script>
+
+    
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "รับจ้างยิงแอดทำโฆษณาออนไลน์",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "รับทำโฆษณาออนไลน์ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "รับทำโฆษณาออนไลน์",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "รับทำโฆษณาออนไลน์ รับจ้างยิงแอดทำโฆษณาออนไลน์ รับทำโฆษณา Facebook Ads รับทำโฆษณา Google สายเทา"
+                  }
+                }
+              ]
+            }
+          `}
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="myadsdev" />
